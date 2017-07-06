@@ -1,0 +1,8 @@
+<h2>welcome workouts#index</h2>
+<% @workouts.each do |workout| %>
+  <%=link_to workout.date.strftime(" %d %B %Y"), workout_path(workout)%>
+  <%= workout.workout%>
+  <%= workout.mood%>
+  <%= workout.length%>
+  <br/>
+<% end %>
