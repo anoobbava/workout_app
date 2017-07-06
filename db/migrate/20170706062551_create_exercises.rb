@@ -5,7 +5,6 @@ class CreateExercises < ActiveRecord::Migration[5.0]
       t.integer :sets
       t.integer :reps
       t.references :workout
-
       t.timestamps
     end
   end

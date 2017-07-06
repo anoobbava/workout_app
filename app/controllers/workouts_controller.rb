@@ -37,7 +37,7 @@ class WorkoutsController < ApplicationController
       redirect_to root_path
     else
       redirect_to @workout
-    end 
+    end
   end
 
   private

@@ -1,4 +1,4 @@
-<h2>welcome workouts#index</h2>
+<h2>welcome to workout logs page</h2>
 <% @workouts.each do |workout| %>
   <p><h3><%=link_to workout.date.strftime(" %d %B %Y"), workout_path(workout)%></h3></p>
   <p><%= workout.workout%></p>

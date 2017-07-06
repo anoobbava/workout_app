@@ -1,7 +1,14 @@
-<h3>Welcome to Show</h3>
-<p><%= @workout.date%></p>
-<p><%= @workout.workout%></p>
-<p><%= @workout.mood%></p>
-<p><%=@workout.length%></p>
+<div class="workout">
+  <h3>Welcome to Show</h3>
+  <p><%= @workout.date%></p>
+  <p><%= @workout.workout%></p>
+  <p><%= @workout.mood%></p>
+  <p><%=@workout.length%></p>
+</div>
+<div class="workout_exercise">
+  <h3>Exercises</h3>
+  <%= render 'exercises/exercise' %>
+  <%= render 'exercises/form' %>
+</div>
 <%= link_to 'edit', edit_workout_path(@workout)%>|<%=link_to 'back', root_path %>|<%=link_to 'delete', workout_path(@workout), method: :delete %>
 
