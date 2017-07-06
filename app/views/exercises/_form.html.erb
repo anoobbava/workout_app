@@ -1,6 +1,6 @@
 <%= simple_form_for([@workout, @workout.exercises.new]) do |f| %>
-   <%= f.input :name, label: 'Exercise Name', class: 'form-control'%>
+  <%= f.input :name, label: 'Exercise Name', class: 'form-control'%>
   <%= f.input :sets, label: 'how many sets', class: 'form-control'%>
   <%= f.input :reps, label: 'repos', class: 'form-control'%>
-  <%= f.submit %>
+  <%= f.submit 'Create Exercise', class: 'btn btn-success'%>
 <% end %>

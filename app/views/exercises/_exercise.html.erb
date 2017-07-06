@@ -1,5 +1,10 @@
+<th>name</th>
+<th>sets</th>
+<th>Repetition</th>
 <% @workout.exercises.each do |exercise|%>
-    <p>name: <%= exercise.name %></p>
-    <p>sets: <%= exercise.sets %></p>
-    <p>reps: <%= exercise.reps %></p>
-  <% end %>
+  <tr>
+    <td><%= exercise.name %></td>
+    <td><%= exercise.sets %></td>
+    <td><%= exercise.reps %></td>
+  </tr>
+<% end %>
